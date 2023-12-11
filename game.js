@@ -1,3 +1,5 @@
+"use strict";
+
 let boxes = document.querySelectorAll(".box");
 let newGameBtn = document.querySelector(".btn");
 let msgContainer = document.querySelector(".msg-container");
@@ -17,7 +19,7 @@ const winPatterns = [
 ];
 
 function restrat(){
-   turnO = 0;
+  //  turnO = 0;
    enableButtons();
    msgContainer.classList.add("hide");
 }
@@ -30,7 +32,7 @@ function disableButtons(){
 function enableButtons(){
    for(let box of boxes){
       box.disabled = false;
-      box.innerHTML=" ";
+      box.innerHTML= " ";
    }
 }
 
